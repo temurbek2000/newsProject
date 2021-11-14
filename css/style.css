@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+
+.menu{
+    width: 100%;
+    position: sticky;
+    top:0;
+    left: 0;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    overflow: hidden;
+    list-style-type: none;
+}
+.menu ul li{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.menu ul li:nth-child(10n){
+    margin-right: 0;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding:10px 20px;
+    background-color: red;
+    display: block;
+
+}
+
+/*.menu #search_movie{*/
+/*    padding: 10px;*/
+/*    width: 50%;*/
+/*    border-radius: 20px;*/
+/*    outline: none;*/
+/*}*/
+.movies{
+    overflow: hidden;
+    padding-top: 200px;
+}
+
+.movie{
+    width: 22%;
+    margin-right: 4%;
+    float: left;
+}
+
+.movie img{
+    height: 250px;
+}
+.movie .info{
+    height: 150px;
+}
+
+
+.movie:nth-child(4n){
+    margin-right: 0;
+}
+
+/*.input-text{*/
+/*    display: inline-block;*/
+/*    width: 50%;*/
+/*}*/
+
+/*textarea{*/
+/*    width: 100%;*/
+/*    height: 200px;*/
+/*}*/
+/*.output-text{*/
+/*   width: 50%;*/
+/*    padding: 20px;*/
+/*    display: inline-block;*/
+/*}*/
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-content{
+    padding: 20px;
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    margin: 100px auto;
+}
+
+#cancel{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    margin: 50px 0 0 200px;
+    cursor: pointer;
+}
+#open_modal{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    margin: 50px 0 0 200px;
+    cursor: pointer;
+}
+
+.close{
+    display: none;
+}
